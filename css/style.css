@@ -33,10 +33,9 @@ footer{
 /* main */
 /* button-fixed-top */
 .button-fixed-top{
-    height: 10%;
+    height: 70px;
     width: 85%;
-    /* background-color: black; */
-    background-color: red;
+    background-color: black;
     position: fixed;
     right: 0;
     display: flex;
@@ -61,14 +60,107 @@ footer{
 .navbar-left{
     height: 100%;
     width: 15%;
-    background-color: cyan;
+    padding: 1em;
+    background-color: black;
     float: left;
 }
 
+.navbar-left .logo img{
+    width: 80%;
+}
+
+.navbar-left .home-cerca-libreria ul{
+    list-style: none;
+    margin-top: 1.5em;
+}
+
+.navbar-left .home-cerca-libreria ul li{
+    margin-bottom: 0.5em;
+}
+
+.navbar-left .home-cerca-libreria ul li a{
+    text-decoration: none;
+    color: #797c80;
+    font-weight: bold;
+}
+
+.navbar-left .home-cerca-libreria ul li a img{
+    width: 15%;
+    vertical-align: middle;
+}
+
+.navbar-left .home-cerca-libreria ul li a span{
+    font-size: 0.9em;
+}
+
+.crea-playlist{
+    margin-top: 1.5em;
+}
+
+.crea-playlist h5{
+    color: white;
+}
+
+.crea-playlist ul{
+    list-style: none;
+}
+
+.crea-playlist ul li{
+    margin-top: 0.5em;
+}
+
+.crea-playlist ul li i{
+    color: gray;
+    vertical-align: middle;
+    font-size: 3em;
+}
+
+.crea-playlist ul li span{
+    color: #797c80;
+    font-weight: bold;
+    margin-left: 0.5em;
+}
+
+.playlist-scroll li{
+    color: #797c80;
+    font-weight: bold;
+    font-size: small;
+    margin-bottom: 1em;
+}
+
+
+.installa-app div:first-of-type span{
+    color: #797c80;
+    font-weight: bold;
+    font-size: small;
+}
+
+.installa-app div:last-of-type span{
+    color: white;
+    font-weight: bold;
+}
+
+.installa-app img{
+    width: 10%;
+    vertical-align: middle;
+    margin-right: 0.5em;
+}
+
+.installa-app div:last-of-type img{
+    background-color: gray;
+    width: 15%;
+    border-radius: 50%;
+}
+
+.installa-app hr{
+    border: 1px solid #797c80;
+    margin: 0.5em 0;
+}
 /* main content */
 .main-content{
     height: 90%;
     width: 85%;
+    margin-top: 70px;
     padding: 0 1em;
     background-color: #141922;
     float: right;
