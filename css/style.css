@@ -34,9 +34,11 @@ footer{
 /* button-fixed-top */
 .button-fixed-top{
     height: 10%;
-    width: 80%;
-    background-color: black;
-    float: right;
+    width: 85%;
+    /* background-color: black; */
+    background-color: red;
+    position: fixed;
+    right: 0;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -49,22 +51,73 @@ footer{
 
 .button-fixed-top button{
     margin: 0.5em;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.5);
     padding: 1em 3em;
     border: 1px solid white;
     border-radius: 20px;
 }
 
+/* navbar left */
 .navbar-left{
     height: 100%;
-    width: 20%;
+    width: 15%;
     background-color: cyan;
     float: left;
 }
 
+/* main content */
 .main-content{
     height: 90%;
-    width: 80%;
-    background-color: rgb(255, 0, 128);
+    width: 85%;
+    padding: 0 1em;
+    background-color: #141922;
     float: right;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+/* nav-main-content */
+.main-content .nav-main-content ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin: 1em 15em;
+}
+
+.main-content .nav-main-content a{
+    text-decoration: none;
+    color: #797c80;
+    font-size: small;
+    font-weight: bold;
+}
+
+.main-content .nav-main-content a:hover{
+    color: white;
+    border-bottom: 2px solid #adff2f;
+}
+/* recently-played */
+.recently-played h2{
+    color: white;
+    margin-top: 1.5em;
+}
+
+.recently-played ul{
+    list-style: none;
+    display: flex;
+}
+
+.recently-played ul li{
+    background-color: salmon;
+    border: 1px solid white;
+}
+
+.recently-played ul h3{
+    color: white;
+    text-align: center;
+}
+
+.recently-played ul p{
+    color: #797c80;
+    font-size: small;
+    font-weight: bold;
+    text-align: center;
 }
