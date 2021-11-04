@@ -19,11 +19,6 @@ main{
     overflow: hidden;
 }
 
-footer{
-    height: 100px;
-    background-color: yellow;
-}
-
 .clearfix::after{
     content: '';
     display: table;
@@ -66,7 +61,7 @@ footer{
 }
 
 .navbar-left-top{
-    height: calc(100% - 80px);
+    height: 200px;
 }
 
 .navbar-left .logo img:last-of-type{
@@ -101,10 +96,6 @@ footer{
     font-size: 0.9em;
 }
 
-.crea-playlist{
-    margin-top: 1.5em;
-}
-
 .crea-playlist h5{
     color: white;
 }
@@ -129,11 +120,21 @@ footer{
     margin-left: 0.5em;
 }
 
+.playlist-container{
+    height: calc(100% - 280px);
+}
+
+.navbar-left-center{
+    height: 60%;
+    overflow: auto;
+}
+
 .playlist-scroll li{
     color: #797c80;
     font-weight: bold;
     font-size: small;
     margin-bottom: 1em;
+    list-style: none;
 }
 
 .navbar-left-bottom{
@@ -234,6 +235,11 @@ footer{
 
 
 /* footer */
+footer{
+    height: 100px;
+    background-color: yellow;
+}
+
 .navbar-footer{
     width: 100%;
     height: 100%;
@@ -242,22 +248,18 @@ footer{
 
 .nav-footer-left,
 .nav-footer-right{
-    width: 25%;
+    width: 350px;
     height: 100%;
     border: 1px solid black;
 }
 
 .nav-footer-center{
-    width: 50%;
+    width: calc(100% - 350px);
     height: 100%;
     border: 1px solid black;
 }
 
-.navbar-footer .nav-footer-left img{
-    width: 15%;
-}
-
-
+/* media */
 @media screen and (max-width: 600px){
 
     .navbar-left{
@@ -295,6 +297,10 @@ footer{
     }
 
     .crea-playlist{
+        display: none;
+    }
+
+    .navbar-left-center{
         display: none;
     }
 
