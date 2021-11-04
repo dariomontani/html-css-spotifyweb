@@ -96,6 +96,10 @@ main{
     font-size: 0.9em;
 }
 
+.crea-playlist{
+    margin-bottom: 1em;
+}
+
 .crea-playlist h5{
     color: white;
 }
@@ -212,26 +216,78 @@ main{
 
 .recently-played ul{
     list-style: none;
+    margin-top: 2em;
     display: flex;
 }
 
 .recently-played ul li{
-    background-color: salmon;
-    border: 1px solid white;
+    width: calc(100% / 7);
+    margin-right: 2%;
+}
+
+.recently-played ul li img{
+    width: 100%;
 }
 
 .recently-played ul h3{
     color: white;
     text-align: center;
+    font-size: 0.9em;
+    margin: 0.5em 0;
 }
 
 .recently-played ul p{
     color: #797c80;
-    font-size: small;
+    font-size: x-small;
     font-weight: bold;
     text-align: center;
 }
 
+/* creato-per-john */
+.creato-per-john h2,
+.artisti-più-popolari h2{
+    color: white;
+    margin-top: 1.5em;
+}
+
+.creato-per-john p,
+.artisti-più-popolari p{
+    color: #797c80;
+    font-weight: bold;
+    font-size: small;
+    margin-top: 1em;
+}
+
+.creato-per-john ul,
+.artisti-più-popolari ul{
+    list-style: none;
+    margin-top: 2em;
+    display: flex;
+}
+
+.creato-per-john ul h3,
+.artisti-più-popolari ul h3{
+    color: white;
+    text-align: center;
+    font-size: 0.9em;
+    margin: 0.5em 0;
+}
+
+.creato-per-john ul li,
+.artisti-più-popolari ul li{
+    width: calc(100% / 7);
+    margin-right: 2%;
+}
+
+.creato-per-john ul li img,
+.artisti-più-popolari ul li img{
+    width: 100%;
+}
+
+/* artisti-più-popolari */
+.artisti-più-popolari ul li img{
+    border-radius: 50%;
+}
 
 
 /* footer */
@@ -258,6 +314,7 @@ footer{
     height: 100%;
     border: 1px solid black;
 }
+
 
 /* media */
 @media screen and (max-width: 600px){
