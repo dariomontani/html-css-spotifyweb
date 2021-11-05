@@ -8,6 +8,10 @@ html{
     font-family: 'Montserrat', sans-serif;
 }
 
+body{
+    background-color: #141922;
+}
+
 .container{
     width: 100%;
     height: 100vh;
@@ -30,7 +34,7 @@ main{
 .button-fixed-top{
     height: 70px;
     width: calc(100% - 230px);
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.5);
     position: fixed;
     right: 0;
     display: flex;
@@ -46,9 +50,15 @@ main{
 .button-fixed-top button{
     margin: 0.5em;
     background-color: rgba(0, 0, 0, 0.5);
-    padding: 1em 3em;
+    padding: 1em 4em;
     border: 1px solid white;
     border-radius: 20px;
+    font-size: 0.75em;
+}
+
+.button-fixed-top button:hover{
+    padding: 1.1em 4.1em;
+    font-size: 0.8em;
 }
 
 /* navbar left */
@@ -79,6 +89,10 @@ main{
 
 .navbar-left .home-cerca-libreria ul li{
     margin-bottom: 0.5em;
+}
+
+.navbar-left .home-cerca-libreria ul a:hover{
+    color: white;
 }
 
 .navbar-left .home-cerca-libreria ul li a{
@@ -112,6 +126,28 @@ main{
     margin-top: 0.5em;
 }
 
+.crea-playlist ul li a{
+    text-decoration: none;
+}
+
+.crea-playlist ul li:hover span{
+    color: white;
+}
+
+.crea-playlist li span:first-of-type i{
+    color: black;
+    background-color: gray;
+    font-size: 1.5em;
+    width: 40px; 
+    height: 40px; 
+    text-align: center;
+    line-height: 40px;
+}
+
+.crea-playlist li:hover span:first-of-type i{
+    background-color: white;
+}
+
 .crea-playlist ul li i{
     color: gray;
     vertical-align: middle;
@@ -134,12 +170,21 @@ main{
 }
 
 .playlist-scroll li{
+    margin-bottom: 0.5em;
+    list-style: none;
+}
+
+.playlist-scroll li a{
+    text-decoration: none;
     color: #797c80;
     font-weight: bold;
     font-size: small;
-    margin-bottom: 1em;
-    list-style: none;
 }
+
+.playlist-scroll li a:hover{
+    color: white;
+}
+
 
 .navbar-left-bottom{
     height: 80px;
@@ -150,6 +195,14 @@ main{
     color: #797c80;
     font-weight: bold;
     font-size: small;
+}
+
+.installa-app div:first-of-type a{
+    text-decoration: none;
+}
+
+.installa-app div:first-of-type span:hover{
+    color: white;
 }
 
 .installa-app div:last-of-type span{
@@ -466,3 +519,7 @@ footer{
         width: calc(100% - 50px);
     }
 }
+
+
+
+
