@@ -189,6 +189,8 @@ main{
 .navbar-left-bottom{
     height: 80px;
     background-color: black;
+    position: relative;
+    z-index: 99;
 }
 
 .installa-app div:first-of-type span{
@@ -288,7 +290,7 @@ main{
     display: none;
 }
 
-.recently-played ul:hover li i{
+.recently-played ul li:hover i{
     display: block;
 }
 
