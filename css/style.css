@@ -57,7 +57,7 @@ main{
 }
 
 .button-fixed-top button:hover{
-    padding: 1.1em 4.1em;
+    padding: 1em 4.1em;
     font-size: 0.8em;
 }
 
@@ -201,7 +201,7 @@ main{
     text-decoration: none;
 }
 
-.installa-app div:first-of-type span:hover{
+.installa-app div:first-of-type:hover span{
     color: white;
 }
 
@@ -246,8 +246,9 @@ main{
     margin: auto;
     list-style: none;
     display: flex;
-    justify-content: space-around;
-    width: 700px;
+    justify-content: space-between;
+    width: 60%;
+    max-width: 1100px;
 }
 
 .main-content .nav-main-content a{
@@ -273,6 +274,19 @@ main{
     display: flex;
 }
 
+.recently-played div{
+    position: relative;
+}
+
+/* .recently-played div i{
+    font-size: 3.5em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    filter: invert(1);
+} */
+
 .recently-played ul li{
     width: calc(100% / 7);
     margin-right: 2%;
@@ -280,6 +294,10 @@ main{
 
 .recently-played ul li img{
     width: 100%;
+}
+
+.recently-played ul li:hover img{
+    filter: brightness(0.30);
 }
 
 .recently-played ul h3{
@@ -335,6 +353,11 @@ main{
 .creato-per-john ul li img,
 .artisti-più-popolari ul li img{
     width: 100%;
+}
+
+.creato-per-john ul li:hover img,
+.artisti-più-popolari ul li:hover img{
+    filter: brightness(0.30);
 }
 
 /* artisti-più-popolari */
@@ -395,9 +418,18 @@ footer{
     font-size: x-small;
 }
 
-.navbar-footer .nav-footer-left span{
+.navbar-footer .nav-footer-left p:hover{
+    color: white;
+    text-decoration: underline;
+}
+
+.navbar-footer .nav-footer-left a{
     color: #797c80;
     margin-left: 0.5em;
+}
+
+.navbar-footer .nav-footer-left a:hover{
+    color: white;
 }
 
 /* footer centre */
@@ -417,7 +449,13 @@ footer{
 }
 
 .nav-footer-center .nav-footer-center-top span:nth-child(3){
+    margin: 0 0.2em;
     font-size: 1.7em;
+}
+
+.nav-footer-center .nav-footer-center-top span:nth-child(3):hover{
+    margin: 0 0.13em;
+    font-size: 1.9em;
 }
 
 .nav-footer-center .nav-footer-center-top span:nth-child(5){
@@ -446,6 +484,10 @@ footer{
     border-radius: 10px;
 }
 
+.nav-footer-center .nav-footer-center-bottom div:hover{
+    background: linear-gradient(to right, #baf558 20%, #5a5a5a 20% 80%);
+}
+
 /* footer right */
 .navbar-footer .nav-footer-right{
     display: flex;
@@ -460,13 +502,45 @@ footer{
     border-radius: 10px;
 }
 
+.navbar-footer .nav-footer-right div:last-of-type:hover{
+    background: linear-gradient(to right, #baf558 20%, #5a5a5a 20% 80%);
+}
+
 .navbar-footer .nav-footer-right div:nth-last-child(n-4){
     color: white;
     margin-right: 0.5em;
 }
 
 
-/* media */
+/* media 1100px*/
+@media screen and (max-width: 1100px) {
+    .main-content .nav-main-content ul{
+       flex-wrap: wrap;
+    }
+
+    .recently-played ul{
+        flex-wrap: wrap;
+    }
+
+    .recently-played ul li{
+        width: calc(100% / 4.5);
+        margin-right: 2%;
+    }
+}
+
+/* media 700px*/
+@media screen and (max-width: 700px) {
+    .recently-played ul{
+        flex-wrap: wrap;
+    }
+
+    .recently-played ul li{
+        width: calc(100% / 2.25);
+        margin-right: 2%;
+    }
+}
+
+/* media 600px*/
 @media screen and (max-width: 600px){
 
     .navbar-left{
@@ -519,6 +593,12 @@ footer{
         width: calc(100% - 50px);
     }
 }
+
+
+
+
+
+
 
 
 
